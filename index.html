@@ -1,126 +1,66 @@
-* { margin: 0; padding: 0; box-sizing: border-box; }
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinholândia 2026 🌱</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-:root {
-    --green: #2E7D32;
-    --light-green: #4CAF50;
-    --dark-green: #1B5E20;
-    --yellow: #FFEB3B;
-}
+    <header>
+        <nav>
+            <a href="#" class="logo">🌾 Agrinholândia <span>2026</span></a>
+            <ul class="menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#atividades">Atividades</a></li>
+                <li><a href="#inscricao">Inscreva-se</a></li>
+            </ul>
+        </nav>
+    </header>
 
-body {
-    font-family: 'Segoe UI', sans-serif;
-    line-height: 1.6;
-    color: #333;
-}
+    <!-- HERO - Lugar 1 para imagem grande -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Agrinholândia 2026</h1>
+            <p>O futuro do campo começa com as crianças!</p>
+            <a href="#inscricao" class="btn">Participar Agora</a>
+        </div>
+    </section>
 
-header {
-    background: var(--dark-green);
-    padding: 1rem 0;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
+    <!-- Seção Sobre - Lugar 2 para imagem -->
+    <section id="sobre" class="section">
+        <div class="container">
+            <h2>Sobre o Agrinho 2026</h2>
+            
+            <!-- Imagem 1 aqui -->
+            <img src="https://files.oaiusercontent.com/file-3Cp8y?se=2026-06-30T23%3A00%3A00Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D2592000%2C%20immutable&rscd=attachment%3B%20filename%3D3Cp8y.png" 
+                 alt="Crianças felizes plantando no campo - Agrinho 2026" 
+                 class="img-principal">
 
-nav {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2rem;
-}
+            <p>Programa educativo que ensina crianças sobre agricultura, meio ambiente e sustentabilidade de forma divertida.</p>
+        </div>
+    </section>
 
-.logo {
-    font-size: 1.8rem;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
+    <!-- Seção Atividades - Lugar 3 para imagem -->
+    <section id="atividades" class="section">
+        <div class="container">
+            <h2>Nossas Atividades</h2>
+            
+            <!-- Imagem 2 aqui -->
+            <img src="https://files.oaiusercontent.com/file-QlW5m?se=2026-06-30T23%3A00%3A00Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D2592000%2C%20immutable&rscd=attachment%3B%20filename%3DQlW5m.png" 
+                 alt="Crianças aprendendo agricultura sustentável" 
+                 class="img-principal">
 
-.menu {
-    display: flex;
-    gap: 2rem;
-    list-style: none;
-}
+            <div class="cards">
+                <div class="card">Plantio e Colheita</div>
+                <div class="card">Cuidado com os Animais</div>
+                <div class="card">Oficinas de Meio Ambiente</div>
+            </div>
+        </div>
+    </section>
 
-.menu a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.hero {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-                url('https://files.oaiusercontent.com/file-3Cp8y?se=2026-06-30T23%3A00%3A00Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D2592000%2C%20immutable&rscd=attachment%3B%20filename%3D3Cp8y.png') center/cover;
-    height: 90vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-}
-
-.hero h1 {
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
-}
-
-.btn {
-    background: var(--yellow);
-    color: var(--dark-green);
-    padding: 15px 35px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-block;
-    margin-top: 1rem;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    transform: scale(1.08);
-}
-
-.section {
-    padding: 5rem 0;
-    background: #f8fff0;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
-}
-
-h2 {
-    text-align: center;
-    color: var(--dark-green);
-    margin-bottom: 3rem;
-    font-size: 2.8rem;
-}
-
-.img-ia {
-    width: 100%;
-    border-radius: 20px;
-    margin: 2rem 0;
-    box-shadow: 0 15px 35px rgba(46, 125, 50, 0.2);
-}
-
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 3rem;
-}
-
-.card {
-    background: white;
-    padding: 2rem;
-    border-radius: 16px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-    transition: 0.4s;
-}
-
-.card:hover {
-    transform: translateY(-15px);
-}
+    <script src="script.js"></script>
+</body>
+</html>

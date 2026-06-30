@@ -7,166 +7,60 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AGRINHO 2026 | Agro Forte, Futuro Sustentável</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(to bottom, #f0f7f0, #e6f0e6);
-        }
-        header {
-            background: linear-gradient(135deg, #2e7d32, #4caf50);
-            color: white;
-            text-align: center;
-            padding: 3rem 1rem;
-        }
-        .logo {
-            font-size: 3rem;
-            margin-bottom: 0.5rem;
-        }
-        nav {
-            background: #1b5e20;
-            padding: 1rem;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 2rem;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        section {
-            padding: 4rem 1rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .hero {
-            background: url('https://source.unsplash.com/random/1600x900/?farm,sustainable') center/cover no-repeat;
-            height: 60vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: white;
-            text-shadow: 0 2px 10px rgba(0,0,0,0.7);
-        }
-        h1, h2 {
-            color: #1b5e20;
-        }
-        .card {
-            background: white;
-            border-radius: 12px;
-            padding: 1.5rem;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            margin-bottom: 1.5rem;
-        }
-        footer {
-            background: #1b5e20;
-            color: white;
-            text-align: center;
-            padding: 2rem;
-            margin-top: 3rem;
-        }
-        .btn {
-            display: inline-block;
-            background: #4caf50;
-            color: white;
-            padding: 12px 30px;
-            border-radius: 50px;
-            text-decoration: none;
-            margin-top: 1rem;
-            font-weight: bold;
-        }
-    </style>
-</head>
-<body>
 
+    <!-- HEADER -->
     <header>
-        <div class="logo">🌱 AGRINHO 2026</div>
-        <h1>Agro Forte, Futuro Sustentável</h1>
-        <p>Equilíbrio entre produção e meio ambiente</p>
+        <nav>
+            <a href="#" class="logo">Agrinholândia <span>2026</span></a>
+            <ul class="menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#atividades">Atividades</a></li>
+                <li><a href="#inscricao">Inscreva-se</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#importancia">Importância</a></li>
-            <li><a href="#praticas">Práticas</a></li>
-            <li><a href="#conclusao">Conclusão</a></li>
-        </ul>
-    </nav>
-
-    <section class="hero">
-        <div>
-            <h2 style="font-size: 3rem;">Produzir com responsabilidade,<br>preservar para o futuro</h2>
-            <a href="#sobre" class="btn">Saiba mais</a>
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Agrinholândia 2026</h1>
+            <p>Plantando o futuro sustentável com as crianças do Brasil!</p>
+            <a href="#inscricao" class="btn">Quero Participar</a>
         </div>
     </section>
 
-    <section id="sobre">
-        <h2>Sobre o Tema</h2>
-        <p>O tema do Agrinho 2026 nos convida a refletir sobre a importância de um agronegócio forte e competitivo, que ao mesmo tempo respeita e preserva o meio ambiente. É possível produzir mais, com qualidade e tecnologia, sem degradar o solo, a água e a biodiversidade.</p>
+    <!-- SOBRE -->
+    <section id="sobre" class="section">
+        <div class="container">
+            <h2>Sobre o Agrinho 2026</h2>
+            <img src="https://files.oaiusercontent.com/file-3Cp8y?se=2026-06-30T23%3A00%3A00Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D2592000%2C%20immutable&rscd=attachment%3B%20filename%3D3Cp8y.png" 
+                 alt="Crianças no campo Agrinho 2026" 
+                 class="img-ia">
+            <p>O Agrinho 2026 é um programa educativo que une crianças, escola e campo para construir um futuro mais verde e consciente.</p>
+        </div>
     </section>
 
-    <section id="importancia" style="background: #f8fff8;">
-        <h2>Por que esse equilíbrio é essencial?</h2>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
-            <div class="card">
-                <h3>🌍 Meio Ambiente</h3>
-                <p>Preservação de recursos naturais para as próximas gerações.</p>
-            </div>
-            <div class="card">
-                <h3>🚜 Produção Forte</h3>
-                <p>Tecnologia e inovação para aumentar a produtividade de forma responsável.</p>
-            </div>
-            <div class="card">
-                <h3>👨‍🌾 Sociedade</h3>
-                <p>Segurança alimentar, geração de emprego e desenvolvimento rural sustentável.</p>
+    <!-- ATIVIDADES -->
+    <section id="atividades" class="section">
+        <div class="container">
+            <h2>Atividades Incríveis</h2>
+            <img src="https://files.oaiusercontent.com/file-QlW5m?se=2026-06-30T23%3A00%3A00Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D2592000%2C%20immutable&rscd=attachment%3B%20filename%3DQlW5m.png" 
+                 alt="Crianças com produtos agrícolas" 
+                 class="img-ia">
+            <div class="cards">
+                <div class="card">
+                    <h3>Plantio Consciente</h3>
+                    <p>Aprenda a cuidar da terra de forma sustentável.</p>
+                </div>
+                <div class="card">
+                    <h3>Oficinas Criativas</h3>
+                    <p>Arte, ciência e agricultura juntos.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="praticas">
-        <h2>Práticas Sustentáveis no Campo</h2>
-        <ul style="font-size: 1.1rem; line-height: 2.2;">
-            <li>🌱 Plantio direto e rotação de culturas</li>
-            <li>💧 Irrigação de precisão e reúso de água</li>
-            <li>🌳 Preservação de matas ciliares e áreas de reserva legal</li>
-            <li>🐝 Manejo integrado de pragas (redução de agrotóxicos)</li>
-            <li>🔬 Uso de biotecnologia e agricultura de precisão</li>
-            <li>♻️ Recuperação de solo degradado</li>
-        </ul>
-    </section>
-
-    <section id="conclusao" style="background: #1b5e20; color: white; text-align: center;">
-        <h2 style="color: white;">Conclusão</h2>
-        <p style="font-size: 1.3rem; max-width: 800px; margin: 0 auto;">
-            Um Agro Forte e Sustentável não é uma escolha, é a única forma de garantir um futuro próspero para o Brasil e para o planeta.
-        </p>
-        <p><strong>Produzir hoje pensando no amanhã.</strong></p>
-    </section>
-
-    <footer>
-        <p>🌾 Projeto desenvolvido para o Agrinho 2026</p>
-        <p>Equilíbrio entre produção e meio ambiente</p>
-    </footer>
-
-</body>
-</html>
+    <script src="script.js"></script>
 </body>
 </html>
